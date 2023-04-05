@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 
 const schema = mongoose.Schema({
     email: {type: String, unique: true},
+    digit: {type: String},
     validations: {
         email: {
             valid: {type: Boolean, default: false}, code: String
