@@ -18,7 +18,7 @@ router.post('/register',
 
         user.validations.email.code = emailCode
         await user.save()
-        return res.status(201).json({ message: 'User registered', user, smsCode, emailCode, tokenGS });
+        return res.status(201).json({ message: 'User registered', user, emailCode });
     });
 
 router.post(
